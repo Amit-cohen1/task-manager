@@ -1,0 +1,135 @@
+/* TodoList.css */
+.todo-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.todo-container h1 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-bottom: 1px solid #ecf0f1;
+  transition: background-color 0.2s ease;
+}
+
+.todo-list li:hover {
+  background-color: #f8f9fa;
+}
+
+.todo-list li input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todo-list li span {
+  flex: 1;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.todo-list li button {
+  padding: 8px 16px;
+  background-color: #e74c3c;
+  font-size: 0.9rem;
+}
+
+.todo-list li button:hover {
+  background-color: #c0392b;
+}
+
+.completed span {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
+/* Add these styles for better overall look */
+body {
+  background-color: #f5f6fa;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Add loading state styles */
+.loading {
+  text-align: center;
+  color: #3498db;
+  padding: 2rem;
+}
+
+/* Error message styles */
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 10px;
+  background-color: #fdeaea;
+  border-radius: 6px;
+}
+
+/* Add header styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+button {
+  background-color: #e74c3c;
+  padding: 8px 16px;
+}
+
+.header button:hover {
+  background-color: #c0392b;
+}
